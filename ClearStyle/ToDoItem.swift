@@ -9,5 +9,17 @@
 import UIKit
 
 class ToDoItem: NSObject {
+    
+    //Description of this item
+    var text: String
+    
+    //State of this item
+    var completed: Bool
+    
+    //Returns a To Do Item
+    init(text: String) {
+        self.text = text
+        self.completed = false
+    }
 
 }
